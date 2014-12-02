@@ -5,8 +5,8 @@
         "translation": {
             "core": {
                 "languages": {
-                    "select": "Выбрать язык",
-                    "russian": "Русский"
+                    "select": "ဘာသာစကား ရွေးချယ်ရန်",
+                    "burmese": "မြန်မာဘာသာ"
                 },
                 "app": {
                     "save-and-continue": "Сохранить и продолжить",
@@ -21,11 +21,11 @@
                     "makeItVisible": "Вы можете сделать его видимым",
                     "whenYouAreDone": "когда закончите редактирование.",
                     "tags": "Метки",
-                    "details": "Детали",
-                    "options": "Варианты",
-                    "addToCart": "Добавить в корзину",
+                    "details": "အသေးစိတ် အကြောင်းအရာ",
+                    "options": "ရွေးချယ်မှုများ",
+                    "addToCart": "စျေးခြင်းထဲ ထည့်ပါ",
                     "chooseOptions": "Пожалуйста выберите вариант прежде чем добавить товар в корзину",
-                    "outOfStock": "Извините, этого товара нет в наличии",
+                    "outOfStock": "ပစ္စည်းပြတ်နေပါသဖြင့် စိတ်မကောင်းပါ",
                     "productDeleteError": "Произошла ошибка во время удаления товара ",
                     "publishFirst": "Опубликуйте товар прежде чем добавить в корзину.",
                     "selectOption": "Выберите вариант прежде чем добавить в корзину",
@@ -48,9 +48,9 @@
                     "head": "Ваша корзина",
                     "items": "Товаров в корзине",
                     "subtotal": "Всего",
-                    "shipping": "Доставка",
-                    "tax": "Налог",
-                    "total": "Сумма"
+                    "shipping": "ပစ္စည်းပို့ခ",
+                    "tax": "အခွန်ငွေ",
+                    "total": "စုစုပေါင္်း ကျသင့်ငွေ"
                 },
                 "cartDrawerItems": {
                     "left": "слева"
@@ -62,14 +62,14 @@
                     "create-or-login": "Создайте личный кабинет или авторизируйтесь чтобы продолжить"
                 },
                 "addressBookGrid": {
-                    "chooseAddress": "Выбрать адрес доставки и адрес плательщика",
-                    "createDefault": "Создать адрес по умолчанию",
-                    "selectShipping-address": "Выбрать адрес доставки",
-                    "selectBilling-address": "Выбрать адрес плательщика"
+                    "chooseAddress": "ပစ္စည်းပို့ရန်နှင့် ဘောက်ချာပို့ရန် လိပ်စာရွေးပါ",
+                    "createDefault": "သုံးနေကျ လိပ်စာဖြည့်စွက်ပါ",
+                    "selectShipping-address": "ပစ္စည်းပို့ရန် လိပ်စာရွေးပါ",
+                    "selectBilling-address": "ဘောက်ချာပို့ရန် လိပ်စာရွေးပါ"
                 },
                 "addressBookAdd": {
-                    "addAddress": "Добавить адрес",
-                    "createAddress": "Создать адрес по умолчанию"
+                    "addAddress": "လိပ်စာအသစ်ထည့်ရန်",
+                    "createAddress": "သုံးနေကျ လိပ်စာဖြည့်စွက်ပါ"
                 },
                 "checkoutProgressBar": {
                     "login": "Авторизация",
@@ -151,12 +151,12 @@
                         "mustBeLoggedIn": "Необходимо войти",
                         "needToSetUsernameOrEmail": "Необходимо имя пользователя или email",
                         "oldPasswordFormat": "старый формат пароля",
-                        "Password may not be empty": "Пароль не может быть пустым",
+                        "Password may not be empty": "စကားဝှက်ကို ချန်လျှပ်ထားခဲ့၍ မရပါ",
                         "signupsForbidden": "Регистрация отключена",
                         "tokenExpired": "Время действия токена истекло",
                         "tokenHasInvalidEmailAddress": "У токена неправильный email адрес",
-                        "userHasNoPasswordSet": "У пользователя не установлен пароль",
-                        "userNotFound": "Пользователь не найден",
+                        "userHasNoPasswordSet": "အကောင့်ပိုင်ရှင်တွင် စကားဝှက်သတ်မှတ်ထားခြင်း မရှိသေးပါ",
+                        "userNotFound": "ဤနာမည်နှင့် ပတ်သတ်သောအကောင့် ရှာမတွေ့ပါ",
                         "verifyEmailLinkExpired": "Ссылка подтверждения email устарела",
                         "verifyEmailLinkIsForUnknownAddress": "Ссылка подтверждения email для неизвестного адреса",
                         "matchFailed": "Не совпадают",
