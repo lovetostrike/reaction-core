@@ -104,12 +104,20 @@ loadFixtures = ->
 
   # Load data from settings/json files
   unless Accounts.loginServiceConfiguration.find().count()
-    if Meteor.settings.public?.facebook?.appId
+    if Meteor.settings.socials?.public?.facebook?.appId
       Accounts.loginServiceConfiguration.insert
         service: "facebook",
-        appId: Meteor.settings.public.facebook.appId,
-        secret: Meteor.settings.facebook.secret
-
+        appId: Meteor.settings.socials.public.facebook.appId,
+        secret: Meteor.settings.socials.private.facebook.secret
+        
+  # load social app config from settings/json files
+  if Meteor.settings.socials?.public?
+    if Meteor.settings.socials.public.facebook?.appId?
+      shopId = Shops.findOne()._id
+      Shops.update shopId,
+        $set:
+          'socials.facebook.appId': Meteor.settings.socials.public.facebook.appId
+        
   # Loop through ReactionCore.Packages object, which now has all packages added by
   # calls to register
   # removes package when removed from meteor, retriggers when package added

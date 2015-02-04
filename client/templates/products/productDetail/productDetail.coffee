@@ -34,8 +34,7 @@ Template.productDetail.helpers
       return Template.productMetaFieldForm
     else
       return Template.productMetaField
-
-
+  
 Template.productDetail.events
   "click #price": ->
     # When an admin clicks on the main price to edit it, instead
@@ -163,11 +162,14 @@ Template.productDetail.events
       $(".pinterestMsg-edit").fadeIn()
       $(".pinterestMsg-edit-input").focus()
 
-  "click .fa-instagram": ->
+  "click .fa-google-plus": ->
     if ReactionCore.hasOwnerAccess()
-      $(".instagramMsg-edit").fadeIn()
-      $(".instagramMsg-edit-input").focus()
+      $(".googleplusMsg-edit").fadeIn()
+      $(".googleplusMsg-edit-input").focus()
 
-  "focusout .facebookMsg-edit-input,.twitterMsg-edit-input,.pinterestMsg-edit-input": ->
+  "focusout .facebookMsg-edit-input,.twitterMsg-edit-input,.pinterestMsg-edit-input,.googleplusMsg-edit-input": ->
     Session.set "editing-"+this.field, false
     $('.social-media-inputs > *').hide()
+    
+Template.productDetail.rendered = ->
+  Session.set('socialImgSrc', $('.img-responsive').attr('src'))

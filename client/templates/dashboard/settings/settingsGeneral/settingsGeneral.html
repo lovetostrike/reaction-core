@@ -1,11 +1,12 @@
 <template name="settingsGeneral">
 <h2>Shop <small data-18n="app.settings">Settings</small></h2>
-<div class="col-md-5">
+<div class="col-md-6">
 <ul class="nav nav-tabs">
   <li class="active"><a href="#general" data-toggle="tab">General</a></li>
   <li><a href="#address" data-toggle="tab">Address</a></li>
   <li><a href="#smtp" data-toggle="tab">SMTP</a></li>
   <li><a href="#settings" data-toggle="tab">Settings</a></li>
+  <li><a href="#social-app-config" data-toggle="tab">Social Apps Configuration</a></li>
 </ul>
 
 <!-- Tab panes -->
@@ -54,6 +55,14 @@
         {{> afQuickField name='timezone' options=timezoneOptions}}
         {{> afQuickField name='currency' options=currencyOptions}}
         {{> afQuickField name='baseUOM' options=uomOptions}}
+        {{> settingsGeneralSubmitButton}}
+      {{/autoForm}}
+    </div>
+  </div>
+  <div class="tab-pane" id="social-app-config">
+    <div class="well">
+      {{#autoForm collection="Shops" doc=. id="shopEditSocialForm" type="update"}}
+        {{> afQuickField name='socials.facebook.appId'}}
         {{> settingsGeneralSubmitButton}}
       {{/autoForm}}
     </div>

@@ -70,6 +70,7 @@ Package.onUse(function (api) {
     api.use("cfs:s3@0.1.1");
     api.use("cfs:ui@0.1.3");
     api.use("raix:ui-dropped-event@0.0.7");
+    api.use("lovetostrike:shareit", 'client');
 
     //implying these are reused in reaction packages
     api.imply("less");
@@ -93,7 +94,6 @@ Package.onUse(function (api) {
     api.imply("sacha:spin" ["client"]);
     api.imply("dburles:factory");
     api.imply("ongoworks:speakingurl");
-
 
   // Pre-0.9.0
   } else {

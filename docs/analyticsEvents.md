@@ -296,7 +296,7 @@ A user clicks on the Instagram icon footer link.
     "category" : "link",
     "action" : "link-click",
     "label" : "external link click",
-    "value" : "instagram",
+    "value" : "googleplus",
     "shopId" : "WvrKDomkYth3THbDD",
     "_id" : "zhPxLcBehiJEFd2JA"
 }

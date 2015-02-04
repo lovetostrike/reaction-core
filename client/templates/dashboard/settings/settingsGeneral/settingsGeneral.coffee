@@ -35,6 +35,16 @@ Template.settingsGeneral.helpers
     for measure, uom of unitsOfMeasure
       uomOptions.push {label: uom.name, value: measure}
     return uomOptions
+  
+  socialOptions: ->
+    socials = ReactionCore.Collections.Shops.findOne().socials
+    #socialOptions = []
+    #for social, values of socials
+    #  console.log(social)
+    #  console.log(values.appId)
+    #  socialOptions.push {label: social, value: values.appId}
+    #return socialOptions
+    return socials
 
   portOptions: [
     {label: 25, value: 25}

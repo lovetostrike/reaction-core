@@ -171,7 +171,7 @@ ReactionCore.Schemas.Product = new SimpleSchema
     type: String
     optional: true
     max: 255
-  instagramMsg:
+  googleplusMsg:
     type: String
     optional: true
     max: 255

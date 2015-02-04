@@ -129,6 +129,15 @@ ReactionCore.Schemas.currencyEngine = new SimpleSchema
     optional: true
     label: "Open Exchange Rates App ID"
 
+ReactionCore.Schemas.Socials = new SimpleSchema
+  facebook:
+    type: Object
+    optional: true
+  'facebook.appId':
+    type: String
+    optional: true
+    label: 'Facebook App Id'
+
 ReactionCore.Schemas.Shop = new SimpleSchema
   _id:
     type: String
@@ -156,6 +165,10 @@ ReactionCore.Schemas.Shop = new SimpleSchema
     type: ReactionCore.Schemas.currencyEngine
   currencies:
     type: [ReactionCore.Schemas.Currency]
+  socials:
+    type: ReactionCore.Schemas.Socials
+    optional: true
+    label: "Social Apps Configuration"
   public:
     type: String
     optional: true

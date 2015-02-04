@@ -21,6 +21,9 @@ Factory.define 'shop', ReactionCore.Collections.Shops,
   currency: "USD"
   currencyEngine: undefined
   currencies: []
+  socials:
+    facebook:
+      appId: ''
   public: true
   timezone: '1'
   baseUOM: "OZ"
@@ -64,7 +67,7 @@ Factory.define 'product', ReactionCore.Collections.Products,
   hashtags: []
 #   twitterMsg:
 #   facebookMsg:
-#   instagramMsg:
+#   googleplusMsg:
 #   pinterestMsg:
 #   metaDescription:
 #   handle:

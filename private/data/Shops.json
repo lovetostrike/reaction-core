@@ -374,6 +374,11 @@
             "provider": "OXR",
             "apiKey": ""
         },
+        "socials": {
+          "facebook": {
+               "appId": ""
+          }                    
+        },
         "customEmailSettings": {
             "port": 25
         },

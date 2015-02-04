@@ -38,3 +38,4 @@ Template.variantList.events
     $(event.target).addClass("active")
     Alerts.removeSeen()
     setCurrentVariant @._id
+    Session.set('socialImgSrc', $('.img-responsive').attr('src'))
