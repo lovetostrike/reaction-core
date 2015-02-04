@@ -15,8 +15,7 @@ Template.productSocial.created = ->
     faSize: 'fa-lg'
     classes: ''
     
-  unless FB?
-    FB.init(ShareIt.settings.sites.facebook)  
+  FB.init(ShareIt.settings.sites.facebook)  
   return
   
 Template.productSocial.helpers
